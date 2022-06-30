@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,6 +47,17 @@ namespace BudgetPlannerV3.Pages
             ex.travelCost = Convert.ToDouble(travel.Text);
             ex.phoneCost = Convert.ToDouble(phone.Text);
             ex.otherCost = Convert.ToDouble(otherCosts.Text);
+
+            StreamWriter sw = new StreamWriter(@"C:\Users\dariu\OneDrive\Desktop\PROG6221\POE\BudgetPlannerV3\Values.txt");
+            sw.WriteLine(ex.grossMonthlyIncome);
+            sw.WriteLine(ex.monthlyTax);
+            sw.WriteLine(ex.groceriesCost);
+            sw.WriteLine(ex.waterAndLightsCost);
+            sw.WriteLine(ex.travelCost);
+            sw.WriteLine(ex.phoneCost);
+            sw.WriteLine(ex.otherCost);
+            //Close the file
+            sw.Close();
 
             MessageBox.Show("Values have been entered" +
                 "\nPlease choose in the menu whether you are renting or buying a home" +

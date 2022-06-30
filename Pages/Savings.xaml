@@ -49,11 +49,11 @@
                 <TextBox Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="1" Name="AmountToSave"
                           Text="{Binding Path = savingAmount}" Margin="400 0 50 10"/>
 
-                <TextBlock Grid.Column="0" Grid.Row="1" Text="Enter the date you want to save money until:"
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="How any months will you be saving for"
                            FontSize="15" Foreground="{DynamicResource TextTertiaryColor}" Margin="50 2 0 0"/>
-                <DatePicker Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="1" Name="DateToSaveTill"
+                <TextBox Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="1" Name="DateToSaveTill"
                           Text="{Binding Path = savingDay}" Margin="400 0 50 10"/>
-
+                
                 <TextBlock Grid.Column="0" Grid.Row="2" Text="Enter the reason for saving this amount:"
                            FontSize="15" Foreground="{DynamicResource TextTertiaryColor}" Margin="50 2 0 0"/>
                 <TextBox Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="1" Name="Reason"

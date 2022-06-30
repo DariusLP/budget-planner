@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,14 @@ namespace BudgetPlannerV3.Pages
             hl.deposit = Convert.ToDouble(deposit.Text);
             hl.interestRate = Convert.ToDouble(interestRate.Text);
             hl.repayMonths = Convert.ToDouble(months.Text);
+
+            StreamWriter sw = File.AppendText(@"C:\Users\dariu\OneDrive\Desktop\PROG6221\POE\BudgetPlannerV3\Values.txt");
+            sw.WriteLine(hl.price);
+            sw.WriteLine(hl.deposit);
+            sw.WriteLine(hl.interestRate);
+            sw.WriteLine(hl.repayMonths);
+            //Close the file
+            sw.Close();
 
             MessageBox.Show("Values have been entered" +
                 "\nIf you are buying a car please select the car icon" +

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,9 +44,18 @@ namespace BudgetPlannerV3.Pages
             c.carInsurancePremium = Convert.ToDouble(InsurancePrem.Text);
             c.carDeposit = Convert.ToDouble(Deposit.Text);
 
+            StreamWriter sw = File.AppendText(@"C:\Users\dariu\OneDrive\Desktop\PROG6221\POE\BudgetPlannerV3\Values.txt");
+            sw.WriteLine(c.makeAndModel);
+            sw.WriteLine(c.purchasePrice);
+            sw.WriteLine(c.carInterestRate);
+            sw.WriteLine(c.carInsurancePremium);
+            sw.WriteLine(c.carDeposit);
+            //Close the file
+            sw.Close();
+
             MessageBox.Show("Values have been saved" +
                 "\nIf you are making a savings plan, select the Savings icon" +
-                "\nIf not select the results icon");
+                "\nIf not select the Results icon");
         }
     }
 }

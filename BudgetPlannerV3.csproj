@@ -190,5 +190,8 @@
     <Resource Include="Resources\pexels-karolina-grabowska-4386374.jpg" />
     <Resource Include="Resources\pexels-tima-miroshnichenko-5912634.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Values.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

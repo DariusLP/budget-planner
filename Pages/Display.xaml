@@ -31,13 +31,24 @@
             <TextBlock Grid.Column="0" Grid.Row="0" Name="tExp1"
                        FontSize="15" Foreground="{DynamicResource TextTertiaryColor}" Margin="50 2 0 0"/>
 
+            <!--First row-->
             <TextBlock Grid.Column="0" Grid.Row="0" Name="tExp2"
                        FontSize="15" Foreground="{DynamicResource TextTertiaryColor}" Margin="50 2 0 0"/>
 
+            <!--First row-->
             <TextBlock Grid.Column="0" Grid.Row="0" Name="tExp3"
                        FontSize="15" Foreground="{DynamicResource TextTertiaryColor}" Margin="50 2 0 0"/>
 
+            <!--First row-->
             <TextBlock Grid.Column="0" Grid.Row="0" Name="tExp4"
+                       FontSize="15" Foreground="{DynamicResource TextTertiaryColor}" Margin="50 2 0 0"/>
+
+            <!--First row-->
+            <TextBlock Grid.Column="0" Grid.Row="0" Name="tExp5"
+                       FontSize="15" Foreground="{DynamicResource TextTertiaryColor}" Margin="50 2 0 0"/>
+
+            <!--First row-->
+            <TextBlock Grid.Column="0" Grid.Row="0" Name="tExp6"
                        FontSize="15" Foreground="{DynamicResource TextTertiaryColor}" Margin="50 2 0 0"/>
 
             <Button Content="Display Expenses" Margin="300 100 300 0" Click="Button_Click"/>

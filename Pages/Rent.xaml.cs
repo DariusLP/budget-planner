@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,11 @@ namespace BudgetPlannerV3.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             r.rentAmount = Convert.ToDouble(rent.Text);
+
+            StreamWriter sw = File.AppendText(@"C:\Users\dariu\OneDrive\Desktop\PROG6221\POE\BudgetPlannerV3\Values.txt");
+            sw.WriteLine(r.rentAmount);
+            //Close the file
+            sw.Close();
 
             MessageBox.Show("Values have been entered" +
                 "\nIf you are buying a car please select the car icon" +
