@@ -8,8 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/pexels-hasan-albari-1350463.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/pexels-karolina-grabowska-4386374.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/pexels-tima-miroshnichenko-5912634.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("values.txt")]
 
 
